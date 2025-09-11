@@ -3,7 +3,7 @@
 Microservice-based Movie Ticket Booking (Spring Boot + Vue.js)
 
 ## Tech stack
-- Java 17, Spring Boot 3.x, Spring Cloud (Eureka, Gateway, Config)
+- Java 21, Spring Boot 3.3, Spring Cloud (Eureka, Gateway, Config)
 - MongoDB (Movie), MySQL (Booking/User), Redis (seat hold)
 - RabbitMQ (events)
 - Docker & Docker Compose, GitHub Actions (CI)
