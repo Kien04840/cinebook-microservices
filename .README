@@ -1,0 +1,23 @@
+# Movie Booking Microservices
+
+Microservice-based Movie Ticket Booking (Spring Boot + Vue.js)
+
+## Tech stack
+- Java 17, Spring Boot 3.x, Spring Cloud (Eureka, Gateway, Config)
+- MongoDB (Movie), MySQL (Booking/User), Redis (seat hold)
+- RabbitMQ (events)
+- Docker & Docker Compose, GitHub Actions (CI)
+
+## Project layout
+
+
+## Quick start (dev)
+1. Start databases: `docker-compose up -d mongo mysql rabbitmq`
+2. Build & run a service: `mvn -pl movie-service spring-boot:run`
+3. Run all with docker-compose later...
+
+## Contributing
+Open an issue / PR. Follow commit message format.
+
+## License
+MIT
