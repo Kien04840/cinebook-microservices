@@ -1,0 +1,10 @@
+package com.cinebook.booking_payment.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.cinebook.booking_payment.entity.Payment;
+@Repository
+public interface PaymentRepository extends JpaRepository<Payment, String> {
+
+}
