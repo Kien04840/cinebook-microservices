@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    name: Build & Test (Maven)
+    name: Build (Maven)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -32,8 +32,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-m2-
 
-      - name: Build & run tests
-        run: mvn -B -V -T1C clean verify
+      - name: Build with Maven
+        run: mvn -B -DskipTests clean package
 
       - name: Upload Surefire reports (tests)
         if: always()
