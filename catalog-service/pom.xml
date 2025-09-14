@@ -7,9 +7,9 @@
 		<artifactId>movie-booking-microservices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>movie-service</artifactId>
-	<name>movie-service</name>
-	<description>Movie Service for Movie Booking Microservices</description>
+	<artifactId>catalog-service</artifactId>
+	<name>catalog-service</name>
+	<description>Catalog Service for Movie Booking Microservices</description>
 
 	<dependencies>
 		<dependency>

@@ -7,9 +7,9 @@
 		<artifactId>movie-booking-microservices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>booking-service</artifactId>
-	<name>booking-service</name>
-	<description>Booking Service for Movie Booking Microservices</description>
+	<artifactId>booking-payment-service</artifactId>
+	<name>booking-payment-service</name>
+	<description>Booking Payment Service for Movie Booking Microservices</description>
 
 	<dependencies>
 		<dependency>
