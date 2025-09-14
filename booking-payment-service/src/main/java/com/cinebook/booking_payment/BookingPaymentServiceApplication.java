@@ -1,12 +1,13 @@
-package com.cinebook.catalog_service;
+package com.cinebook.booking_payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CatalogServiceApplication {
+public class BookingPaymentServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CatalogServiceApplication.class, args);
+		SpringApplication.run(BookingPaymentServiceApplication.class, args);
 	}
+
 }

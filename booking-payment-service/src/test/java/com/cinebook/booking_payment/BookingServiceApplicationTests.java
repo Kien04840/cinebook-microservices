@@ -1,10 +1,10 @@
-package com.cinebook.movie_service;
+package com.cinebook.booking_payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieServiceApplicationTests {
+class BookingPaymentServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

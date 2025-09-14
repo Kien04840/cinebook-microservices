@@ -1,10 +1,10 @@
-package com.cinebook.booking_service;
+package com.cinebook.catalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BookingServiceApplicationTests {
+class CatalogServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
