@@ -1,13 +1,20 @@
 package com.cinebook.catalog.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.cinebook.catalog.dto.MovieShowsResponseDTO;
+import com.cinebook.catalog.service.CatalogService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/api/catalog")
+@RequiredArgsConstructor
 public class CatalogController {
+
+    private final CatalogService catalogService;
 
     @GetMapping("/movies")
     public String getAllMovies() {
@@ -18,5 +25,15 @@ public class CatalogController {
     @GetMapping("/movies/{movieId}")
     public String getMovieById(@PathVariable String movieId) {
         return "Returning details for movie ID: " + movieId + " from catalog-service";
+    }
+
+    @GetMapping("/shows/search")
+    public ResponseEntity<MovieShowsResponseDTO> searchShows(
+            @RequestParam String movieId,
+            @RequestParam String city,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+
+        MovieShowsResponseDTO response = catalogService.findShowsByMovieAndLocation(movieId, city, date);
+        return ResponseEntity.ok(response);
     }
 }
